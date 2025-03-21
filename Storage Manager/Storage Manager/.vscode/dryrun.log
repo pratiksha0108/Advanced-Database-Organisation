@@ -1,0 +1,18 @@
+make.exe --dry-run --keep-going --print-directory
+make.exe: Entering directory `c:/Users/aruna/Desktop/assign1_storage_manager'
+echo "***** The program is about to start executing ******"
+ 
+gcc -Wall -g -c storage_mgr.c
+echo "****** Have run and compiled the files ******"
+ 
+gcc -Wall -g -c test_assign1_1.c
+echo "****** Have run and compiled the files ******"
+ 
+gcc -Wall -g -c dberror.c
+echo "****** Have run and compiled the files ******"
+gcc -Wall -g storage_mgr.o test_assign1_1.o dberror.o -o outresult
+echo "The result file has been curated"
+echo "*** The execution is completed ***"
+ 
+make.exe: Leaving directory `c:/Users/aruna/Desktop/assign1_storage_manager'
+ 
